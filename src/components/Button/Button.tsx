@@ -1,3 +1,4 @@
+// Вашият компонент
 import * as S from "./elements";
 import { forwardRef, ForwardedRef } from "react";
 import type { HTMLButtonProps } from "../../types";
@@ -14,3 +15,7 @@ export const Button = forwardRef(
     return <S.Button {...props} variant={variant} ref={ref} />;
   }
 );
+
+Button.displayName = "Button"; // Добавяне на displayName
+
+export default Button;
