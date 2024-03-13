@@ -9,7 +9,7 @@ export interface ButtonProps extends HTMLButtonProps {
 
 export const Button = forwardRef(
   (
-    { variant = "primary", ...props }: ButtonProps,
+    { variant, ...props }: ButtonProps,
     ref: ForwardedRef<HTMLButtonElement>
   ) => {
     return <S.Button {...props} variant={variant} ref={ref} />;
